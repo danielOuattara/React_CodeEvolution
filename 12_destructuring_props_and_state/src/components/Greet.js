@@ -1,7 +1,7 @@
 import React from 'react'
 
-// 1-> destructuring in the parameter.
-// ------------------------------------
+/* 1-> destructuring in the parameter.
+------------------------------------*/
 
 // export const Greet = ({ name, heroName }) => { 
 //     return (
@@ -13,8 +13,8 @@ import React from 'react'
 // }
 
 
-// 2-> destructuring in the parameter.
-//-------------------------------------
+/* 2-> destructuring in the parameter.
+-------------------------------------*/
 
 export const Greet = (props) => {
     const { name, heroName} = props;

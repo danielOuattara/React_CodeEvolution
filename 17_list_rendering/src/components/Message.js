@@ -1,6 +1,4 @@
-
 import React, { Component } from 'react';
-
 export default class Message extends Component {
 
     constructor() {
@@ -14,7 +12,6 @@ export default class Message extends Component {
         this.setState({ message:"super visitor"})
 
     }
-
 
     render() {
         return (

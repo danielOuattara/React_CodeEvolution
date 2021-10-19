@@ -6,7 +6,6 @@ export default class ClassComponentClick extends Component {
         console.log("Hello");
     }
 
-
     render() {
         return (
             <div>

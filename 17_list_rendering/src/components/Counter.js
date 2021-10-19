@@ -30,7 +30,6 @@ export default class Counter extends Component {
         }), () => console.log(this.state.count))
     }
 
-
     onIncrementByFive2() {
         this.onIncrement2()
         this.onIncrement2()

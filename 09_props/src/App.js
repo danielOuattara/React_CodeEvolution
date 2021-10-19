@@ -12,9 +12,16 @@ function App() {
         <button>Click to meet John</button>
       </Greet>
       <Greet name={"Diana Spincer"} heroName={"The Princess"}/>
+
       <hr />
 
-      <Welcome name={"Danny Boy"} heroName={"The King"}/>
+      <Welcome name={"Danny Boy"} heroName={"The King"}>
+        <p>This is children paragraph</p>
+      </Welcome>
+      <Welcome name={"John Doe"}>
+        <button>Click to meet John</button>
+      </Welcome>
+      <Welcome name={"Diana Spincer"} heroName={"The Princess"}/>
     </div>
   );
 }

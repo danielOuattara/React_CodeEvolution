@@ -4,19 +4,12 @@
 // n°1
 
 // import React, { Component } from 'react'
-
 // export default class UserGreetings extends Component {
 //     constructor(props) {
 //         super(props)
 //         this.state = { isLoggedIn: true }
 //     }   
 //     render() {
-//         // return (
-//         //     <div>
-//         //         <p>Welcome Daniel</p>
-//         //         <p>Welcome Guest</p>
-//         //     </div>
-//         // )
 //         if(this.state.isLoggedIn) {
 //             return (
 //                 <p>Weclome Daniel</p>
@@ -33,7 +26,6 @@
 
 //n°2
 // import React, { Component } from 'react'
-
 // export default class UserGreetings extends Component {
 //     constructor(props) {
 //         super(props)
@@ -49,11 +41,7 @@
 //             message = <p>Welcome Guest</p>
 //         }
 
-//         return (
-//             <div>
-//                 {message}
-//             </div>
-//         )
+//         return (<div>{message}</div>)
 //     }
 // }
 
@@ -61,7 +49,6 @@
 
 //n°3
 // import React, { Component } from 'react'
-
 // export default class UserGreetings extends Component {
 //     constructor(props) {
 //         super(props)
@@ -79,16 +66,15 @@
 
 // //n°4
 // import React, { Component } from 'react'
-
 // export default class UserGreetings extends Component {
 //     constructor(props) {
 //         super(props)
-//         this.state = { isLoggedIn: false }
+//         this.state = { isLoggedIn: true }
 //     }
     
 //     render() {
 //         return (
-//             this.state.isLoggedIn? <p> Welcome Daniel</p> : null;
+//             this.state.isLoggedIn? <p> Welcome Daniel</p> : null
 //         )
 //     }
 // }
@@ -97,7 +83,6 @@
 
 //n°5
 import React, { Component } from 'react'
-
 export default class UserGreetings extends Component {
     constructor(props) {
         super(props)

@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
 export default class Counter extends Component {
-
     constructor(props) {
         super(props)
     
@@ -23,13 +21,11 @@ export default class Counter extends Component {
         this.onIncrement()
     }
 
-
     onIncrement2() {
         this.setState((prevState, props) => ({
             count: prevState.count + 1
         }), () => console.log(this.state.count))
     }
-
 
     onIncrementByFive2() {
         this.onIncrement2()

@@ -1,7 +1,5 @@
-
 import React, { Component } from 'react'
 import ChildComponent from './ChildComponent';
-
 export default class ParentComponent extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +13,7 @@ export default class ParentComponent extends Component {
     }
     
     greetParent2(childName) {
-        alert(`Hello ${this.state.parentName} ${childName ? ` from ` + childName : ""}`)
+        alert(`Hello ${this.state.parentName} ${childName ?  " from "  + childName : ""}`)
     }
     
     render() {

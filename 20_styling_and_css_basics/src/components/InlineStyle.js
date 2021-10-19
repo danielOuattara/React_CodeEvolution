@@ -10,6 +10,7 @@ const heading = {
 export default function InlineStyle() {
     return (
         <div>
+            <p className="title">Inline Style</p>
             <h1 style={heading}>Inline</h1>
             <h1 className="error">Error</h1>
         </div>

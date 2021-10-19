@@ -16,7 +16,6 @@ import React, { Component } from 'react';
 export default class Welcome extends Component{
     constructor(props) {
         super(props)
-    
         this.state = {
              country: "England",
              gender: "Male",
@@ -24,8 +23,8 @@ export default class Welcome extends Component{
     }
     
     render() {
-        const {name, heroName} = this.props;
-        const {country, gender} = this.state;
+        const {name, heroName} = this.props; // destructuring props
+        const {country, gender} = this.state; // destructuring state
         return(
             <div>
                 <h1>Hello {name} - {heroName ? heroName : null}</h1>

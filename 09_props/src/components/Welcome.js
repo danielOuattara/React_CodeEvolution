@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 
-// export default Welcome
 
 // class Welcome extends React.Component{
 //     render() {
@@ -14,9 +13,15 @@ import React, { Component } from 'react';
 // export default Welcome
 
 export default class Welcome extends Component{
+
     render() {
+        console.log(this.props);
         return(
-            <h1>Hello {this.props.name} - {this.props.heroName ? this.props.heroName : null}</h1>
+
+            <div>
+                <h1>Hello {this.props.name} - {this.props.heroName ? this.props.heroName : null}</h1>
+                {this.props.children}
+            </div>
         );
     }
 }

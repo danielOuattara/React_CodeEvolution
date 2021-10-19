@@ -1,15 +1,18 @@
 
 // NEW !
 import React from 'react';
-import "./MyStyle.css";
+import "./StyleSheet.css";
 
 export default function StyleSheet(props) {
-    let className = props.primary ? "primary": ""
+    let classPrimary = props.primary ? "primary": ""
+    let classSecondary = props.secondary ? "secondary": ""
     return (
         <div>
-            <h1 className="primary font-xl">Stylesheet</h1>
-
-            <h1 className={`${className} font-xl`}>Stylesheet</h1>
+            <p className="title">using StyleSheet.css</p>
+            <h2 className="primary font-xl">Stylesheet- 1</h2>
+            <h2 className="secondary">Stylesheet- 2</h2>
+            <h2 className={`${classPrimary} font-xl`}>Stylesheet</h2>
+            <h2 className={`${classSecondary} font-xl`}>Stylesheet</h2>
         </div>
     )
 }
