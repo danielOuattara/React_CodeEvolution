@@ -5,7 +5,6 @@ import LifecycleB from './LifecycleB'
 export default class LifecycleA extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              name: "Daniel",
         }
@@ -18,7 +17,7 @@ export default class LifecycleA extends Component {
     }
 
     componentDidMount() {
-        console.log("Lifecycle A : Component did mount");
+        console.log("Lifecycle A : ComponentDidMount");
     }
     
     shouldComponentUpdate() {
@@ -38,14 +37,16 @@ export default class LifecycleA extends Component {
     changeState = () => {
         this.setState({ name: "Ouattara"})
     }
+
     render() {
         console.log(" Lifecycle A : render")
         return (
             <div> 
+                <h2>{this.state.name}</h2>
+                <button onClick={this.changeState}> Change state</button>
+                <br /> <br/>
                 LifeCycle A
                 <LifecycleB />
-                <button onClick={this.changeState}> Change state</button>
-                <h2>{this.state.name}</h2>
             </div>
         );
     }

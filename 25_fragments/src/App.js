@@ -13,11 +13,11 @@ export default class App extends Component {
     return (
       <div className="App">
         <FragmentDemo/> 
-        <hr />      
+        <hr />  <br/>     
         <Table/>
-        <hr />
+        <hr /><br/>
         <Items/>
-        <hr/>
+        <hr/><br/>
         <Items2/>
       </div>
     )

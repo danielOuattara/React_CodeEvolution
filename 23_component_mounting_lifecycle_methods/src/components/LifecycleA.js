@@ -5,20 +5,19 @@ import LifecycleB from './LifecycleB'
 export default class LifecycleA extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              name: "Daniel",
         }
-        console.log(" Lifecycle A :  constructor")
+        console.log(" Lifecycle A :  constructor");
     }
 
     static getDerivedStateFromProps(props, state) {
         console.log(" Lifecycle A :  getDerivedStateFromProps")
-        return null
+        return null;
     }
 
     componentDidMount() {
-        console.log("Lifecycle A : Component did mount")
+        console.log("Lifecycle A : componentDidMount");
     }
     
     render() {

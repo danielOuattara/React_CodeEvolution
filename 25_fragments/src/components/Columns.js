@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React from 'react';
 
 export default function Columns() {
     return (
@@ -7,5 +7,5 @@ export default function Columns() {
             <td>Name</td>
             <td>Daniel</td>
         </React.Fragment>
-    )
+    );
 }

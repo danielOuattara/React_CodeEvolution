@@ -8,7 +8,7 @@ export default function Columns() {
             { items.map( item => (
                 <React.Fragment key={item}>
                     {/* {item } */}
-                    <h2>Title</h2>
+                    <h3>Title</h3>
                     <p>{item}</p>
                 </React.Fragment>
             ))}

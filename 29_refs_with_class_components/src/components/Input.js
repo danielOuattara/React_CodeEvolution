@@ -6,7 +6,6 @@ export default class Input extends Component {
     constructor(props) {
         super(props);
         this.inputRef = React.createRef();
-        this.state = { };
     }
 
     focusInput() {
@@ -17,6 +16,7 @@ export default class Input extends Component {
         return (
             <div>
                 <input type="text" ref={this.inputRef} />
+                {/* <button onClick={this.focusInput.bind(this)}>click</button> */}
             </div>
         )
     }

@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-
 // import RegularFunctionComp from './RegularFunctionComp';
 import MemoComp from './MemoComp';
 

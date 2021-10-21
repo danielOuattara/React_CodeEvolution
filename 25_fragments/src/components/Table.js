@@ -10,5 +10,5 @@ export default function Table() {
                 </tr>
             </tbody>
         </table>
-    )
+    );
 }

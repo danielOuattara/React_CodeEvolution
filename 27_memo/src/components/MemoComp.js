@@ -11,4 +11,4 @@ function MemoComp({ name}) {
     );
 }
 
-export default React.memo(MemoComp);
+export default React.memo(MemoComp); // <---  This how to create a memo component
