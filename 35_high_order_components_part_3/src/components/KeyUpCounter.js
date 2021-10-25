@@ -11,4 +11,4 @@ export class KeyUpCounter extends Component {
     }
 }
 
-export default WithCounter(KeyUpCounter);
+export default WithCounter(KeyUpCounter, 1);

@@ -12,4 +12,4 @@ export class ClickCounter extends Component {
     }
 }
 
-export default WithCounter(ClickCounter);
+export default WithCounter(ClickCounter, 2);

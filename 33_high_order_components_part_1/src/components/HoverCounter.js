@@ -8,14 +8,18 @@ export class HoverCounter extends Component {
         }
     }
 
-    incrementCount = () => {
-        // this.setState( {count : this.state.count + 1  }) // OK ! Why not use this one
+    // method 1
+    // incrementCount = () => {
+    //     return this.setState( {count : this.state.count + 1  }) // OK ! Why not use this one
+    // }
 
+
+    // method 2
+    incrementCount = () => { 
         this.setState( prevState => {
             return { count: prevState.count + 1}
         })
     }
-    
     render() {
         const {count} = this.state;
         return (
