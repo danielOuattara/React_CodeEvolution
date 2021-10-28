@@ -1,10 +1,10 @@
 
 import React, { Component } from 'react'
 import './App.css';
-// import ClickCounterTwo from './components/ClickCounter_2';
-// import HoverCounterTwo from './components/HoverCounter_2';
-import User from './components/User';
+// import User from './components/User';
 import Counter from './components/Counter';
+import HoverCounterTwo from './components/HoverCounter_2';
+import ClickCounterTwo from './components/ClickCounter_2';
 
 
 export default class App extends Component {
@@ -12,14 +12,19 @@ export default class App extends Component {
     return (
       <div className="App">
         {/* <ClickCounterTwo />
-        <HoverCounterTwo /> */}
+        <HoverCounterTwo />
         <User 
           name1='Daniel'
           name2={() =>'Daniel' } 
           name3={(isLoggedIn) => isLoggedIn ? 'Daniel' : 'Guest' } 
           render={(isLoggedIn) => isLoggedIn ? 'Daniel' : 'Guest' } 
+        /> */}
+        <Counter render={(count, incrementCount) => (
+          <ClickCounterTwo count={count} incrementCount={incrementCount} />)} 
         />
-        <Counter render={"render"} />
+        <Counter render={(count, incrementCount) => (
+          <HoverCounterTwo count={count} incrementCount={incrementCount} />)} 
+        />
       </div>
     );
   }
