@@ -2,7 +2,7 @@
 import React from 'react'
 import { UserComsumer } from './userContext'
 
-export default function Component_F() {
+export default function ComponentF() {
     return (
         <div>
             Component F
