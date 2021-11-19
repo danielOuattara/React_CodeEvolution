@@ -9,7 +9,7 @@ import { PersonProvider } from './components/personContext';
 export default class App extends Component {
 
   render() {
-    let person= {
+    let person = {
       name: 'daniel ouattara',
       age: 37
     }
