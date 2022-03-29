@@ -8,4 +8,4 @@ function PortalDemo() {
     );
 }
 
-export default PortalDemo
+export default PortalDemo;

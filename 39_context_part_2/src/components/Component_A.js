@@ -1,11 +1,9 @@
-
-import React from 'react'
-import ComponentB from './Component_B'
+import React from "react";
 
 export default function ComponentC() {
-    return (
-        <div>
-            <ComponentB />            
-        </div>
-    )
+  return (
+    <div>
+      Component A
+    </div>
+  );
 }

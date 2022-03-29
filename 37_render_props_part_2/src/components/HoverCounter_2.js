@@ -20,7 +20,7 @@ class HoverCounterTwo extends Component {
             <div>
                 <h3 onMouseOver={incrementCount}> Hovered {count} times </h3>
             </div>
-        )
+        );
     }
 }
 

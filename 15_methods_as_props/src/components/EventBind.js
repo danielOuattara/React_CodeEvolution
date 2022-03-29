@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 export default class EventBind extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              message:"customer"
         }
@@ -16,12 +15,12 @@ export default class EventBind extends Component {
         console.log(this)
     }
 
-    onHandleHello3() { // 3 
+    onHandleHello3() { // 3 , regular function definition
         this.setState({ message: "Daniel"})
         console.log(this)
     }
 
-    onHandleHello4 = () => {  // 4
+    onHandleHello4 = () => {  // 4, arrow function definition
         this.setState({ message:"Daniel"})
         console.log(this)
     }

@@ -22,17 +22,19 @@ export default class Counter extends Component {
     }
 
     onIncrement2() {
-        this.setState((prevState, props) => ({
-            count: prevState.count + 1
-        }), () => console.log(this.state.count))
+        this.setState(
+            (prevState, props) => ({
+                count: prevState.count + 1
+            }), 
+            () => console.log(this.state.count))
     }
 
     onIncrementByFive2() {
-        this.onIncrement2()
-        this.onIncrement2()
-        this.onIncrement2()
-        this.onIncrement2()
-        this.onIncrement2()
+        this.onIncrement2();
+        this.onIncrement2();
+        this.onIncrement2();
+        this.onIncrement2();
+        this.onIncrement2();
     }
     
     render() {

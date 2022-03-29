@@ -19,6 +19,6 @@ export default class Message extends Component {
                 <button onClick={this.newMessage.bind(this)} > click</button>          
                 <button onClick={() => this.newMessage()} > click</button>          
             </div>
-        )
+        );
     }
 };

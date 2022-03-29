@@ -1,15 +1,12 @@
-
-import React from 'react'
-import { UserComsumer } from './userContext'
+import React from "react";
+import { UserConsumer } from "./userContext";
 
 export default function ComponentF() {
-    return (
-        <div>
-            Component F
-            <UserComsumer>
-                { (username) => <div>Hello {username}</div> }
-            </UserComsumer>
-        </div>
-    )
+  return (
+    <div>
+      Component F
+      <UserConsumer>{(username) => <div>Hello {username}</div>}</UserConsumer>
+      <UserConsumer>{(context) => <div>Hello {context}</div>}</UserConsumer>
+    </div>
+  );
 }
- 
