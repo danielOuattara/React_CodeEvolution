@@ -7,28 +7,23 @@ export default function ComponentC() {
     <div>
       Component D
       <UserConsumer>
-        {(value) =>  (
-        <PersonConsumer>
-          {(context) => {
-            // const {childFirstName , person: {name, age} } = context;
-            console.log(context);
-            const { name, age } = context;
-            <div>Hello - {value}</div>}
-            <div>
-              {
-                <h2>
-                  {name} -- {age}
-                </h2>
-              }
-              {/* <h2>{childFirstName}</h2> */}
-            </div>;
-          }}
-        </PersonConsumer>
-            
-        )}
+        {(value) => (
+          <PersonConsumer>
+            {(context) => {
+              const { name, age } = context;
 
+              return (
+                <>
+                  <div>Hello - {value}</div>
+                  <h2>
+                    {name} -- {age}
+                  </h2>
+                </>
+              );
+            }}
+          </PersonConsumer>
+        )}
       </UserConsumer>
-      {/* <PersonConsumer>{(value) => <h1>{value}</h1>}</PersonConsumer> */}
     </div>
   );
 }

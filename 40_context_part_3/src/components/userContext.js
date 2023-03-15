@@ -1,9 +1,8 @@
-
 import React from "react";
 
+// default value for the context upon creation
 const UserContext = React.createContext("Ouattara");
 const UserProvider = UserContext.Provider;
-const UserComsumer = UserContext.Consumer;
+const UserConsumer = UserContext.Consumer;
 
-// export { UserProvider, UserComsumer };
-export default UserContext;
+export { UserProvider, UserConsumer, UserContext };
