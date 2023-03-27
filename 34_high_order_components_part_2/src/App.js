@@ -1,9 +1,8 @@
-
-import React, { Component } from 'react'
-import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-import KeyUpCounter from './components/KeyUpCounter';
+import React, { Component } from "react";
+import "./App.css";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+import KeyUpCounter from "./components/KeyUpCounter";
 
 export default class App extends Component {
   render() {
@@ -16,7 +15,3 @@ export default class App extends Component {
     );
   }
 }
-
-
-
-
