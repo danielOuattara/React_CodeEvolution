@@ -1,8 +1,7 @@
-
-import React, { Component } from 'react'
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 // import ParentComp from './components/ParentComp';
-import ParentComp2 from './components/ParentComp2';
+import ParentComp2 from "./components/ParentComp2";
 
 export default class App extends Component {
   render() {
@@ -14,7 +13,3 @@ export default class App extends Component {
     );
   }
 }
-
-
-
-
